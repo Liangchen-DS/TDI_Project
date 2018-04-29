@@ -28,9 +28,6 @@ At last, the predicted request volume for each complaint type are plotted.
 
 ![Histogram of RSquare](/plots/histogram.png)
 
-The original
-
-{% include original.html %}
 
 ## Motivation
 
