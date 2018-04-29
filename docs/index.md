@@ -3,7 +3,7 @@
 
 ### Correlation Between Police Incidents and 311 Requests
 
-![Correlation](/plots/correlation.png)
+![Correlation](/plots/Correlation.png)
 
 ### Prediction
 {% include forecast.html %}
