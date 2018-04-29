@@ -10,7 +10,7 @@
 ## Preliminary Results and Plan for Future Research
 
 
-
+![Histogram of RSquare](/plots/histogram.png)
 
 The original
 
