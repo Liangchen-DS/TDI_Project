@@ -14,6 +14,9 @@ forecast
 
 ## Our Findings Sofar
 
-{% include graph.html %}
 
 {% include forecast.html %}
+
+The original
+
+{% include original.html %}
