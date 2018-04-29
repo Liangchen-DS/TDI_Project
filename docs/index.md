@@ -13,3 +13,5 @@ correlation
 forecast
 
 ## Our Findings Sofar
+
+{% include graph.html %}
