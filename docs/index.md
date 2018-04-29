@@ -1,8 +1,6 @@
 
 ## Two Interesting Graphs
 
-### Correlation Between Police Incidents and 311 Requests
-
 ![Correlation](plots/correlation.png)
 
 I wanted analyze the Pearson Correlation between the total 311 requests volume and the total police incidents volume in different neighborhoods of San Francisco. However, the only common aggregated location indicator in the 311 and police incidents data set is the police district, which is too large for meaningful neighborhood analysis. The good news is that they both contain GPS coordinates for each record. I then downloaded a more granular neighborhood shapefile from SF Gov and categorized each record into the neighborhoods defined by the shapefile. 
@@ -11,7 +9,7 @@ After counting the total number of incidents in each neighborhood, I has two tim
 
 I then carried out correlation analysis of these two time series and provided a heat map showing values of the correlation on different neighborhoods on SF map.
 
-### Prediction
+### Aggregated Prediction for Each Type of Requests from 2012 to 2017
 {% include forecast.html %}
 
 I propose to predict the daily number of calls for the top most frequent 50 complaint types using random forest. 
