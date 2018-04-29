@@ -5,8 +5,23 @@
 
 ![Correlation](/plots/Correlation.png)
 
+I wanted analyze the Pearson Correlation between the total 311 requests volume and the total police incidents volume in different neighborhoods of San Francisco. However, the only common aggregated location indicator in the 311 and police incidents data set is the police district, which is too large for meaningful neighborhood analysis. The good news is that they both contain GPS coordinates for each record. I then downloaded a more granular neighborhood shapefile from SF Gov and categorized each record into the neighborhoods defined by the shapefile. 
+
+After counting the total number of incidents in each neighborhood, I has two time series data set of the daily number of 311 requests and police requests in each neighborhood from 2012 to 2017. For the days when there is no police incident but there are some 311 requests, I have set the number of police incident to zero. 
+
+I then carried out correlation analysis of these two time series and provided a heat map showing values of the correlation on different neighborhoods on SF map.
+
 ### Prediction
 {% include forecast.html %}
+
+I propose to predict the daily number of calls for the top most frequent 50 complaint types using random forest. 
+To prepare for the features for prediction, external data sources will be used. They are US calendar  and San Francisco historical weather data from NOAA. Both of them are downloaded from website.
+
+From all the data, 12 features are created, including day of the week, national holiday, average temperature, temperature range, precipitation and the request volume in previous 7 days. These features will be used to predict the request volume of each day. 
+
+Both day of the week and national holiday are used as categorical features, where day of the week have 7 levels and the public holiday has 11 levels (10 for holidays and 1 for normal days). All the other features are daily numerical values. 
+
+At last, the predicted request volume for each complaint type are plotted. 
 
 ## Preliminary Results and Plan for Future Research
 
