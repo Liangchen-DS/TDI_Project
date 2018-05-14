@@ -1,7 +1,7 @@
 Pleae find the code used for analysis in this folder.
 
 
-1. Data.R --> Accessing APIs and reading in csvs to get the data set for analysis and prediction.
+- Data.R --> Accessing APIs and reading in csvs to get the data set for analysis and prediction.
   - Historical 311 data
   - Historical police incident data
   - Population of San Francisco in different census tract
