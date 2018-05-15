@@ -1,5 +1,7 @@
 # Analysis and Prediction of 311 calls in San Francisco
 
+Please find the presentation slides at https://www.slideshare.net/secret/NsQVaWTwWqWbQ5
+
 ## Motivation
 
 "311" is the toll-free number for non-emergency government communications. First piloted in Baltimore, Maryland in 1996, 311 systems have been adopted across United States to be a point of entry to all government information and to serve as one basis of the government performance metric. Citizens could request services, report non-emergency concerns, and obtain information about the city via phone call, email, twitter, or dedicated mobile apps, while government could use the requests to spot trends and anticipate future citizen needs. It is thus very important for the government to be able to forecast the request volumes of each type to reduce operation costs and to improve customer experiences by optimal investment in infrastructures and staffing decisions. 
