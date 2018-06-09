@@ -1,6 +1,6 @@
 # Analysis and Prediction of 311 calls in San Francisco
 
-Please find the presentation slides at https://www.slideshare.net/secret/NsQVaWTwWqWbQ5
+Please find the presentation slides [here](https://www.slideshare.net/secret/NsQVaWTwWqWbQ5)
 
 ## Motivation
 
@@ -20,7 +20,15 @@ I have built a general framework for this research and tested it on two hypothes
 
 This general framework is flexible enough to accommodate many more kinds of analysis than what I have shown in these two case studies with limited amount of time.
 
-## Two Interesting Graphs
+## Some Interesting Graphs
+
+<img src="plots/pie.png" width="500" >
+
+You can see the percentage of each complaint type in the pie chart above. Note that only the top 19 complaint types are displayed, the sum of the rest types is displayed as Others.
+
+<img src="plots/dist.jpg" width="500" >
+
+I plotted the request volumes of the top six complaint types distributed over days of the week. It is easy to see requests volume during the weekends are significantly smaller.
 
 ![Correlation](plots/correlation.png)
 
@@ -29,6 +37,11 @@ I wanted to analyze the Pearson Correlation between the total 311 requests volum
 After counting the total number of incidents in each neighborhood, I has two time series data set of the daily number of 311 requests and police requests in each neighborhood from 2012 to 2017. For the days when there is no police incident but there are some 311 requests, I have set the number of police incident to zero. 
 
 I then carried out correlation analysis of these two time series and provided a heat map showing values of the correlation on different neighborhoods on SF map.
+
+### Comparison between the predicted daily request of 2017 and the reality
+
+<img src="plots/predict.jpg" width="500" >
+The solid point shows the request volumes in the real data, and the circle represents the one from the prediction.
 
 ### Aggregated Prediction for Each Type of Requests from 2012 to 2017
 {% include forecast.html %}
